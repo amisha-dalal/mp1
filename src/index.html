@@ -5,9 +5,93 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MP1</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
     <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
+        <header>
+            <div id="navbar">
+                <a href="#intro">Intro</a>
+                <a href="#aboutme">About Me</a>
+                <a href="#favorites">Favorites</a>
+                <a href="#dance">Dance</a>
+            </div>
+        </header>
+        <section id="intro">
+            <div id="introtext">
+                <h1>Hello World!</h1>
+                <p>Welcome to Amisha's MP1. Scroll down or use the navbar to learn more about me :D</p>
+            </div>
+        </section>
+        <section id="aboutme">
+            <h1>About Me</h1>
+            <div class="aboutcolumns">
+                <div class="column">
+                    <i class="material-icons">school</i>
+                    <h3>Education</h3>
+                    <p>I am currently an undergraduate senior at UIUC. I'm majoring in Computer Science. I wanted to take this
+                        class so I could learn more about full stack development.
+                    </p>
+                </div>
+                <div class="column">
+                    <i class="material-icons">home</i>
+                    <h3>Origin</h3>
+                    <p>I was born and raised in Chicago, Illinois. I grew up with my mom, dad, and younger brother. I am 
+                        very close with my family. We love to travel together and try new food.
+                    </p>
+                </div>
+                <div class="column">
+                    <i class="material-icons">favorite</i>
+                    <h3>Interests</h3>
+                    <p>I love to listen to music, watch television, and dance. You can learn more about my favorite music and TV shows 
+                        in the <a href="favorites">Favorites</a> section. You can learn more about my dance experience in the <a href="dance">Dance</a> section.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="favorites">
+            <h1>Favorites</h1>
+            <h4>Click through the carousel to learn my favorite songs, television shows, and movies!</h4>
+            <div id="carousel">
+                <button class="carousel-btn left">←</button>
+                <ul id="carousel-list">
+                    <li class="carousel-list-item">
+                        <h2>My favorite songs!</h2>
+                        <div class="fav-image-section">
+                            <img class="modal-img" src="https://i.scdn.co/image/ab67616d0000b27333ccb60f9b2785ef691b2fbc" alt="Softly by Clairo">
+                            <img class="modal-img"  src="https://i.scdn.co/image/ab67616d0000b273f34e988b920e5eb27b8c9593" alt="Caught Up by Flo">
+                            <img class="modal-img"  src="https://i.scdn.co/image/ab67616d0000b273af13d05d63fc8199472511d3" alt="Restless by Bibi">
+                        </div>
+                    </li>
+                    <li class="carousel-list-item">
+                        <h2>My favorite TV shows!</h2>
+                        <div class="fav-image-section">
+                            <img class="modal-img"  src="https://musicart.xboxlive.com/7/82b15000-0000-0000-0000-000000000002/504/image.jpg?q=90&m=6&h=270&w=270&b=%23FFFFFFFF&f=jpg&o=f&aim=true" alt="Brooklyn Nine-Nine">
+                            <img class="modal-img"  src="https://upload.wikimedia.org/wikipedia/en/d/d4/A_League_of_Their_Own_2022.png" alt="A League of Their Own">
+                            <img class="modal-img"  src="https://equalopportunityreader.com/wp-content/uploads/2024/10/iwtw-s2-poster.jpg?w=700" alt="Interview With the Vampire">
+                        </div>
+                    </li>
+                    <li class="carousel-list-item">
+                        <h2>My favorite movies!</h2>
+                        <div class="fav-image-section">
+                            <img class="modal-img"  src="https://m.media-amazon.com/images/M/MV5BOWNmMzAzZmQtNDQ1NC00Nzk5LTkyMmUtNGI2N2NkOWM4MzEyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Everything Everywhere All at Once">
+                            <img class="modal-img"  src="https://upload.wikimedia.org/wikipedia/en/1/1c/ButI%27mACheerleader.jpg" alt="But I'm a Cheerleader">
+                            <img class="modal-img"  src="https://m.media-amazon.com/images/I/51ZiZnecONL._UF894,1000_QL80_.jpg" alt="Saving Face">
+                        </div>
+                    </li>
+                </ul>
+                <button class="carousel-btn right">→</button>
+                <div id="myModal" class="modal">
+                    <span id="close">X</span>
+                    <img class="modal-content" id="img_">
+                    <div id="caption"></div>
+                </div>
+            </div>
+        </section>
+        <section id="dance">
+            <p>dance section</p>
+        </section>
+        <footer>
+            <p>footer here</p>
+        </footer>
     </body>
 </html>
