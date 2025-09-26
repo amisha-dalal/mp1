@@ -106,7 +106,8 @@ navlinks.forEach(function(a) {
 //can use similar method from resizing navbar?
 //document.body.scrollTop > 50 || document.documentElement.scrollTop > 50 -- something like that
 //but instead of 50 it would be the position of the section
-window.onscroll = function() {positionIndicator()};
+window.addEventListener("scroll", positionIndicator);
+//window.onscroll = function() {positionIndicator()};
 function positionIndicator() {
     //need the different sections
     var sections = document.querySelectorAll("section");
