@@ -46,7 +46,8 @@ close.onclick = function () {
 }
 
 //Resizing navbar on scroll -- referenced https://www.w3schools.com/howto/howto_js_navbar_shrink_scroll.asp
-window.onscroll = function() {navbarScrollFunction()};
+window.addEventListener("scroll", navbarScrollFunction);
+//window.onscroll = function() {navbarScrollFunction()};
 function navbarScrollFunction() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         document.getElementById("navbar").style.padding = "10px 40px";
