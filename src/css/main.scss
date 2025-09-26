@@ -10,18 +10,20 @@ body {
     text-align: center;
     justify-content: center;
     align-items: center;
+    scroll-behavior: smooth;
 }
 
-header {
-    background-color: $head-foot-color;
-    padding: 1em;
-    padding-left: 50px;
-}
 
 #navbar {
-    position:sticky;
-    top:0;
+    background-color: $head-foot-color;
+    position: sticky;
+    top: 0;
     overflow:hidden;
+    width: 100%;
+    padding: 15px 40px;
+    z-index: 2;
+    transition: 0.3s;
+    font-weight: 18px;
 }
 
 #navbar a {
@@ -31,7 +33,22 @@ header {
     text-transform: uppercase;
     color:$dark-purple;
     padding: 1em;
+    border-radius: 10px;
+    
 }
+
+#navbar a:hover{
+    font-weight: bold;
+}
+
+//ACTIVE- COME BACK TO
+//TO DO
+
+#navbar a.active{
+    font-weight: bold;
+    background-color: rgb(246, 189, 202);
+}
+
 
 section {
     color: $text-color;
@@ -109,6 +126,7 @@ i {
     overflow:hidden;
     display: flex;
     justify-content: center;
+    z-index: 1;
 }
 
 #carousel-list {
@@ -188,7 +206,7 @@ i {
     //this is going to the actual pop-up that appears when you click on the image
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 5;
     left:0;
     top:0;
     width: 100%;

@@ -9,13 +9,11 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <header>
-            <div id="navbar">
-                <a href="#intro">Intro</a>
-                <a href="#aboutme">About Me</a>
-                <a href="#favorites">Favorites</a>
-                <a href="#dance">Dance</a>
-            </div>
+        <header id="navbar">
+            <a href="#intro" class="active navlink">Intro</a>
+            <a href="#aboutme" class="navlink">About Me</a>
+            <a href="#favorites" class="navlink">Favorites</a>
+            <a href="#dance" class="navlink">Dance</a>
         </header>
         <section id="intro">
             <div id="introtext">
@@ -81,11 +79,6 @@
                     </li>
                 </ul>
                 <button class="carousel-btn right">→</button>
-                <div id="myModal" class="modal">
-                    <span id="close">X</span>
-                    <img class="modal-content" id="img_">
-                    <div id="caption"></div>
-                </div>
             </div>
         </section>
         <section id="dance">
@@ -105,5 +98,11 @@
         <footer>
             <p>© 2025 Amisha Dalal</p>
         </footer>
+
+        <div id="myModal" class="modal">
+            <span id="close">X</span>
+            <img class="modal-content" id="img_">
+            <div id="caption"></div>
+        </div>
     </body>
 </html>
